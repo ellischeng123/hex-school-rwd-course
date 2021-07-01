@@ -1,0 +1,204 @@
+body {
+    font-family: sans-serif;
+}
+
+.wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* =========== */
+/* upperHeader */
+/* =========== */
+
+.upperHeader {
+    padding-right: 15px;
+    background-color: rgb(246, 246, 246);
+}
+
+.upperHeader ul {
+    font-size: 16px;
+    padding: 6px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.upperHeader ul li:nth-child(2) {
+    margin-left: 14px;
+}
+
+#fbLink {
+    color: rgb(68, 96, 160);
+}
+
+#twLink {
+    color: rgb(33, 180, 237);
+}
+
+.upperHeader a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.upperHeader img {
+    margin-right: 3px;
+}
+
+/* =========== */
+/* lowerHeader */
+/* =========== */
+
+.lowerHeader {
+    /* height: 50px; */
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 3px 3px -2px silver;
+}
+
+.lowerHeader h1 a {
+    display: block;
+    background-image: url(../images/logo.png);
+    width: 224px;
+    height: 100%;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.nav {
+    display: flex;
+    /* position: relative; */
+    align-items: center;
+}
+
+.nav li a {
+    display: block;
+    font-size: 14px;
+    padding: 18px 30px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(0, 204, 153);
+}
+
+.nav li a:hover, .nav li a.active {
+    background-color: #CCCCCC;
+    color: rgb(0, 244, 183);
+}
+
+.nav li a.navActive {
+    padding-bottom: 16px;
+    border-bottom: 2px solid rgb(0, 204, 153);
+}
+
+/* =========== */
+/* courseIntro */
+/* =========== */
+
+.courseIntro {
+    margin: 64px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.course {
+    box-sizing: border-box;
+    width: 300px;
+    height: 330px;
+    padding: 25px 18px;
+    border-radius: 3px;
+    box-shadow: 0 3px 3px silver;
+}
+
+.course .imgContainer {
+    height: 150px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.course h3 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.course p {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.course ul li {
+    list-style-type: square;
+
+    /* indent 在 Fx 上不會連 list marker 一起縮排，用 padding 的話 marker 還是會在外面*/
+    /* text-indent: 14px; */
+    margin-left: 14px;
+
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+@media (max-width: 1000px) {
+    .nav {
+        flex-wrap: wrap;
+    }
+
+    .nav li {
+        width: 50%;
+    }
+
+    .lowerHeader h1 {
+        display: flex;
+        align-items: center;
+    }
+
+    .lowerHeader h1 a {
+        width: 224px;
+        height: 50px; 
+    }
+
+    .courseIntro {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .upperHeader ul li a div {
+        display: none;
+    }
+
+    .lowerHeader {
+        flex-wrap: wrap;
+    }
+
+    .lowerHeader{
+        justify-content: center;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+    .nav li {
+        width: 100%;
+    }
+
+    .nav li a.navActive {
+        padding-bottom: 18px;
+        border-bottom: none;
+    }
+
+    .courseIntro {
+        flex-wrap: wrap;
+    }
+
+    .course {
+        margin: 12px 50px 32px 50px;
+
+    }
+}
