@@ -1,0 +1,269 @@
+main {
+    background-color: #efe9e7;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+@media(max-width: 569px) {
+    main {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+}
+
+.sidebar h2 {
+    font-size: 20px;
+    color: #3D1101;
+    font-family: 'Noto Sans TC', sans-serif;
+    margin-bottom: 16px;
+}
+
+@media(max-width: 569px) {
+    .sidebar {
+        margin-bottom: 20px;
+    }
+
+    .sidebar h2 {
+        text-align: center;
+    }
+}
+
+.sidebar h2 i {
+    font-size: 30px;
+    margin-right: 6px;
+}
+
+.filter {
+    width: 220px;
+    padding-left: 8px;
+    font-size: 16px;
+    line-height: 2;
+    color: #3D1101;
+    font-family: 'Noto Sans TC', sans-serif;
+    border-bottom: 1px solid #3D1101;
+}
+
+@media(max-width: 569px) {
+    .filters {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .filter {
+        width: 48%;
+        border: 1px solid #3D1101;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;
+    }
+}
+
+.filter:last-child {
+    color: white;
+    background-color: #3D1101;
+}
+
+.catalog {
+    margin-left: 20px;
+}
+
+@media(max-width: 768px) {
+    .catalog {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.topbar {
+    display: flex;
+    margin-bottom: 26px;
+    justify-content: space-between;
+}
+
+@media(max-width: 569px) {
+    .topbar {
+        justify-content: space-evenly;
+    }
+}
+
+.topbar form {
+    display: flex;
+}
+
+.topbar form input[type=text] {
+    display: block;
+    width: 424px;
+    height: 32px;
+    border: 2px solid #3D1101;
+    background-color: #efe9e7;
+    color: #3D1101;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+@media(max-width: 768px) {
+    .topbar form input[type=text] {
+        width: 280px;
+    }
+}
+
+@media(max-width: 569px) {
+    .topbar form input[type=text] {
+        width: 220px;
+    }
+}
+
+.topbar form button {
+    display: block;
+    width: 36px;
+    height: 32px;
+    background-color: #3D1101;
+    color: white;
+    font-size: 16px;
+    border: none;
+}
+
+.checkout {
+    display: flex;
+    align-items: baseline;
+}
+
+@media(max-width: 569px) {
+    .checkout p {
+        display: none;
+    }
+
+    .checkout div {
+        display: none;
+    }
+}
+
+.checkout p {
+    width: 48px;
+    font-size: 16px;
+    color: #3D1101;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.checkout div {
+    width: 1px;
+    height: 14px;
+    background-color: #3D1101;
+    margin-left: 12px;
+    margin-right: 17px;
+}
+
+.checkout i {
+    font-size: 28px;
+    color: #3D1101;
+}
+
+.products {
+    max-width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+@media(max-width: 768px) {
+    .products {
+        max-width: 480px;
+    }
+
+    .product {
+        margin-right: 20px;
+    }
+}
+
+@media(max-width: 569px) {
+    .product {
+        margin-right: 0;
+    }
+}
+
+@media(max-width: 440px) {
+    .product {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.product {
+    position: relative;
+    box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
+    margin-bottom: 30px;
+}
+
+.product img {
+    width: 220px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.product i.fa-heart {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    left: 9px;
+    top: 9px;
+}
+
+.product h3, .product h4 {
+    color: #3D1101;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.product h3, .product h4, p {
+    text-align: center;
+}
+
+.product h3 {
+    margin-top: 11px;
+    font-size: 20px;
+}
+
+.product h4 {
+    font-size: 12px;
+}
+
+.border {
+    width: 91px;
+    height: 1px;
+    background: #3D1101;
+    margin: 8px auto 20px auto;
+}
+
+.product p {
+    font-size: 20px;
+    color: #3D1101;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 16px;
+}
+
+.product p span {
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.product button {
+    display: block;
+    width: 200px;
+    padding: 6px 0px;
+    background-color: #efe9e7;
+    color: #F56C23;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 16px;
+    border: 2px solid #FF5E45;
+    border-radius: 3px;
+    margin: 0 auto 10px auto;
+}
+
+.product button:hover, button:focus {
+    background-image: linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+}
+
+.product button:active {
+    box-shadow: 0 0 0 1px rgba(0,0,0, 0.15) inset, 0 0 6px rgba(0,0,0, 0.20) inset;
+    border-color: #000;
+}

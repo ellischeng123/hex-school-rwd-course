@@ -1,0 +1,152 @@
+main {
+    background-color: #efe9e7;
+    padding: 50px 0px;
+}
+
+main h2 {
+    text-align: center;
+    color: #3D1101;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+main h3 {
+    text-align: center;
+    color: #3D1101;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.form-container {
+    margin: 0 auto;
+    max-width: 620px;
+    margin-top: 35px;
+    border-top: solid 4px #FF5E45;
+    box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
+    padding: 0 15px 21px 15px;
+}
+
+@media(max-width: 569px) {
+    .form-container {
+        margin-right: 3px;
+    }
+}
+
+.form-container h4 {
+    text-align: center;
+    color: #3D1101;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 15px 0px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+@media(max-width: 569px) {
+    .form-container form {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.term {
+    margin-right: 20px;
+}
+
+.term p {
+    width: 285px;
+    color: #3D1101;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 18px;
+}
+
+@media(max-width: 569px) {
+    .term {
+        margin-right: 0;
+        margin-top: 16px;
+    }
+    
+    .term p {
+        text-align: center;
+    }
+}
+
+.input p input {
+    display: block;
+    width: 285px;
+    height: 32px;
+    border: 1px solid #CCCCCC;
+    box-shadow: inset 0px 1px 0px 0px #ECECEC;
+    border-radius: 3px;
+    padding-left: 9px;
+    color: #3D1101;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.input p label {
+    display: block;
+    padding-bottom: 3px;
+}
+
+.input p:first-child {
+    margin-bottom: 15px;
+}
+
+.input p input[type="password"]:first-of-type {
+    margin-bottom: 12px;
+}
+
+.input a {
+    color: #FF5E45;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: end;
+    margin-top: 30px;
+}
+
+@media(max-width: 569px) {
+    .buttons {
+        margin-top: 15px;
+    }
+}
+
+.buttons button[type=submit] {
+    width: 125px;
+    padding: 6px 0px;
+    color: white;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 14px;
+    display: inline-block;
+    border: none;
+    border-radius: 3px;
+}
+
+.buttons button[type=reset] {
+    background: rgba(0,0,0,0.35);
+    margin-right: 11px;
+}
+
+.buttons button[type=submit] {
+    background: #F56C23;
+}
+
+.buttons button:hover, .buttons button:focus {
+    background-image: linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+}
+
+.buttons button:active {
+    box-shadow: 0 0 0 1px rgba(0,0,0, 0.15) inset, 0 0 6px rgba(0,0,0, 0.20) inset;
+    border-color: #000;
+}
