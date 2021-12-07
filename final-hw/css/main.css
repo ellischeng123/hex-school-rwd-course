@@ -385,6 +385,7 @@ main h2 {
 
 .buttons button:hover, .buttons button:focus {
     background-image: linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+    cursor: pointer;
 }
 
 .buttons button:active {

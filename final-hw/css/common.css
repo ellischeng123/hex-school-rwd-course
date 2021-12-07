@@ -247,6 +247,16 @@ footer {
     padding-left: 22px;
 }
 
+.contact ul li a {
+    text-decoration: none;
+    color: #3D1101;
+}
+
+.contact ul li a:hover, .contact ul li a:focus {
+    color: rgba(61, 17, 1, 0.6);
+}
+
+
 .link {
     display: flex;
     flex-direction: column;
@@ -282,11 +292,11 @@ footer {
     color: #3A5795
 }
 
-@media(max-width: 768px) {
+/* @media(max-width: 768px) {
 
 }
 
 @media(max-width: 569px) {
     
-}
+} */
 
